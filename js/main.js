@@ -8,7 +8,7 @@ if('serviceWorker' in navigator){
     })
     .catch(function(err) {
         console.log('Error registrando el Service Worker', err);
-    };
+    });
 }
 let listaDecompras = [
     {nombre:'Envia Mail Fanes', precio:1},
