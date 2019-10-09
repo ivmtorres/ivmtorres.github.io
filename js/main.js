@@ -1,5 +1,15 @@
 console.log('Super lista de compras');
 //generamos un listado de items para comprar que se pueda desplegar en la vista
+//registramos el service worker
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('./sw.js')
+    .then(function(reg){
+        console.log('Service Worker registrado Exitosamente', reg);
+    })
+    .catch(function(err) {
+        console.log('Error registrando el Service Worker', err);
+    };
+}
 let listaDecompras = [
     {nombre:'Envia Mail Fanes', precio:1},
     {nombre:'Inventario Cajon Solar', precio:2},
