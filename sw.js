@@ -13,7 +13,7 @@ self.addEventListener('install',e => {
   );
 });
 
-self.addEventListener('activite',event => {
+self.addEventListener('activate',event => {
   console.log('sw active');
   event.waitUntil(seft.clients.claim());
 })
