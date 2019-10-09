@@ -18,7 +18,7 @@ self.addEventListener('activite',event => {
   event.waitUntil(seft.clients.claim());
 })
 
-seft.addEventListener('fetch', event => {
+self.addEventListener('fetch', event => {
   console.log('sw fetch');
   event.respondWith(
     caches.open(cacheName)
