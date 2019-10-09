@@ -15,7 +15,7 @@ self.addEventListener('install',e => {
 
 self.addEventListener('activate',event => {
   console.log('sw active');
-  event.waitUntil(seft.clients.claim());
+  event.waitUntil(self.clients.claim());
 })
 
 self.addEventListener('fetch', event => {
