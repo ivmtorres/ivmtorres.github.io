@@ -73,4 +73,4 @@ document.getElementById('agregar-producto').addEventListener('click', ()=>{
 
 
 renderList();
-document.querySelector('.prueba-jquery').innerHTML='texto nuevo';
+document.querySelector('.prueba-jquery').innerHTML='texto nuevo'
